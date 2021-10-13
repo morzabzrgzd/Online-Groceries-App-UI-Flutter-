@@ -7,6 +7,7 @@ import 'package:get/get.dart';
 import 'package:nectar_app/data/constants.dart';
 import 'package:nectar_app/screens/number_screen.dart';
 import 'package:nectar_app/widgets/buttom_widget.dart';
+import 'package:nectar_app/widgets/text_title_widget.dart';
 
 class SignInScreen extends StatelessWidget {
   const SignInScreen({Key? key}) : super(key: key);
@@ -121,34 +122,6 @@ class SignInScreen extends StatelessWidget {
               ),
             ),
           ],
-        ),
-      ),
-    );
-  }
-}
-
-class TitleText extends StatelessWidget {
-  const TitleText({
-    Key? key,
-    required this.size,
-    required this.text,
-  }) : super(key: key);
-
-  final Size size;
-  final String text;
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(
-        horizontal: size.width * 0.06,
-      ),
-      child: Text(
-        text,
-        style: TextStyle(
-          fontSize: size.width * 0.06,
-          color: kTextBlackColor,
-          fontFamily: 'Gilroy',
         ),
       ),
     );
