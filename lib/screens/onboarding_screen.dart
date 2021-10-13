@@ -2,7 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import 'package:nectar_app/data/constants.dart';
+import 'package:nectar_app/screens/sign_in_screen.dart';
+import 'package:nectar_app/widgets/buttom_widget.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({Key? key}) : super(key: key);
@@ -48,33 +51,13 @@ class OnboardingScreen extends StatelessWidget {
                     color: kTextColor.withOpacity(.8),
                   ),
                 ),
-                 SizedBox(height: size.height*0.04),
-                Container(
-                  margin: EdgeInsets.symmetric(
-                    horizontal: size.width * 0.08,
-                  ),
-                  height: size.height * 0.065,
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12)
-                      ),
-                      elevation: 0,
-                      primary: kPrimeryColor,
-                    ),
-                    onPressed: () {},
-                    child: Text(
-                      'Get Started',
-                      style: TextStyle(
-                        color: kTextColor,
-                        fontSize: size.width * 0.04,
-                        fontWeight: FontWeight.bold
-                      ),
-                    ),
-                  ),
+                SizedBox(height: size.height * 0.04),
+                ButtonWidget(
+                  size: size,
+                  title: 'Get Started',
+                  backgroundColor: kPrimeryColor,
                 ),
-                 SizedBox(height: size.height*0.08),
+                SizedBox(height: size.height * 0.08),
               ],
             )
           ],

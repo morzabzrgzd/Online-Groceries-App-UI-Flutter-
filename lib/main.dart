@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:nectar_app/screens/sign_in_screen.dart';
 import 'package:nectar_app/screens/splash_screen.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: 'Gilroy-Light'
       ),
-      home:  SplashScreen(),
+      home:   SplashScreen(),
     );
   }
 }
